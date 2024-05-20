@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Actualicé la pagina del estilo para acomodar la sección nueva con botones que resaltan al pasar encima de ellos. -->
+  <style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    .parent {
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+    .child {
+      display: inline-block;
+      padding: 0rem 2rem;
+    }
+    .child1:hover{
+      -moz-transform: scale(1.2);
+      transform: scale(1.2);
+      z-index: 10;
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+    }
+    .child1{
+      transition: all .20s linear;
+    }
+    a:link { text-decoration: none; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:active { text-decoration: none; }
+  </style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="IMG_4987.JPG" style="width:100%;" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2 style = "position:relative; top: 62px">Gustavo Lucca</h2> <!--Cambio de foto y nombre, cambio de posición del nombre.-->
+          </div>
+        </div>
+        <div class="w3-container" style="padding-top: 50px"> <!--Ampliamiento del padding para aocger al nombre.-->
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Science Student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>San Juan, Puerto Rico</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>gustavo.lucca@slu.edu</p>
+          <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-teal"></i>St. Louis, Missouri</p> <!--Cambio de icono para demostrar donde estudio.-->
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <!--En esta sección de habilidades y lenguajes, sustituí la barra de porcentaje por una descripción corta de como obtuve estas habilidades.-->
+          <p>Java</p>
+          <div class="w3-light-grey w3-round-xlarge w3-medium">
+            <p><i class="w3-large w3-text-teal"></i>Learned and used Java during Spring 2024 in my software design class.</p>
+          </div>
+          <p>C++</p>
+          <div class="w3-light-grey w3-round-xlarge w3-medium">
+            <p><i class="w3-large w3-text-teal"></i>Learned and used C++ during Fall 2023 in my data structures class.</p>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-medium">
+            <p><i class="w3-large w3-text-teal"></i>Learned and used Python during Spring 2023 in my OOP class.</p>
+          </div>
+          <p>HTML & CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-medium">
+            <p><i class="w3-large w3-text-teal"></i>Learned and used HTML & CSS during Fall 2022 in my WWW class.</p>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge w3-medium">
+            <p><i class="w3-large w3-text-teal"></i>Grew up in a bilingual household, am currently attending college in the US.</p>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge w3-medium">
+            <p><i class="w3-large w3-text-teal"></i>My first language.</p>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+      <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+      <!--En esta sección, cambié experiencia laboral por unos proyectos de programación que he hecho, incluyendo un boton interactivo personalmente diseñado que dirige a las paginas de github de los proyectos.-->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Previous projects</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Chess games website / WWW class</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Fall 2022</span></h6>
+          <p>As a final project for my intro to CS class, I was tasked with creating a website using HTMl, CSS, and JavaScript elements. The code for this website alongside a link to the website can be found <span class="w3-tag w3-teal w3-round"><a href="https://github.com/GustavoLucca/Chess-Games" target="_blank"><button type="button" style="background-color: #009688; font-size: 15px; border: none; color: white; cursor: pointer;">here.</button></a></span></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Website presentation / Programming class</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2022</h6>
+          <p>As a final project for my senior year programming class, I had to create a presentation on a hispanic country assigned to me by the professor. This presentation was done in the format of a website, which helped me get a foundation on HTMl and CSS. The code for this website can be found <span class="w3-tag w3-teal w3-round"><a href="https://github.com/GustavoLucca/Argentina" target="_blank"><button type="button" style="background-color: #009688; font-size: 15px; border: none; color: white; cursor: pointer;">here.</button></a></span></p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Saint Louis University</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2026</h6>
+          <p>Bachelor's degree in Computer Science, with minors in Entrepreneurship and Philosophy.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of Puerto Rico - University High School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2022</h6>
+          <p>High School Diploma.</p>
+          <hr>
+        </div>
+      </div>
+      <!-- Creé una sección "sobre mi" en donde elaboré sobre mi experiencia y le añadí un poco de personalidad a la pagina. -->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user-circle fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About me</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>
+            Hello! My name is Gustavo Lucca, and I am a highly motivated third-year SLU student currently studying Computer Science with a minor in Entrepreneurship and Philosophy. I am passionate about computer science and all the areas this field encompasses, such as Artificial Intelligence and machine learning, to mention a few. At SLU, I have taken a number of CS courses related to Object-Oriented Programming and Data Structures which have led to a proficiency in C++, Java and Python. My favorite class so far has been World Wide Web, where we applied concepts from discrete math, such as graph theory, to the web.
+            <br>
+            <br>
+            At SLU, I am currently maintaining a 3.80 GPA, as well as gratefully receiving a Vice President tuition scholarship and a Magis Award. I am from Puerto Rico, and I completed my High school studies there at the University of Puerto Rico's High School, where I graduated magna cum laude. I am fluent in English and Spanish. I look forward to working with you.
+          </b></h5>
+        </div>
+      </div>
+      <!-- Creé dos secciones más que funcionan como botones y llevan a unas certificaciones que realicé. -->
+<div class="parent">
+  <div class="child">
+    <a href="https://www.linkedin.com/in/gustavo-lucca-padilla-0a545a2a6/details/certifications/1635554289416/single-media-viewer/?profileId=ACoAAEm_6P0B4uaoz9zXTYJk9jssf1ofAmP8eGc" target="_blank">
+      <div class="w3-container w3-card w3-white w3-margin-bottom child1">
+        <h2 style="block-size: 70px; width: 100%; height: 100%" class="w3-text-grey w3-padding-16"><i class="fa fa-file-excel-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Excel Certification</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>
+          </b></h5>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="child">
+    <a href="https://www.linkedin.com/in/gustavo-lucca-padilla-0a545a2a6/details/certifications/1635554286627/single-media-viewer/?profileId=ACoAAEm_6P0B4uaoz9zXTYJk9jssf1ofAmP8eGc" target="_blank">
+      <div class="w3-container w3-card w3-white child1">
+        <h2 style="block-size: 70px; width: 100%; height: 100%;" class="w3-text-grey w3-padding-16"><i class="fa fa-database fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Database Certification</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>
+          </b></h5>
+        </div>
+      </div>
+    </a>
+    </div>
+</div>
+
+      <!-- End Right Column -->
+    </div>
+
+    <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+<!-- Le añadí funcionalidad al icono de LinkedIn para que dirija a los usuarios a mi pagina de LinkedIn. -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on LinkedIn.</p>
+  <a href="https://www.linkedin.com/in/gustavo-lucca-padilla-0a545a2a6/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i><a/>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
